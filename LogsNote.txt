@@ -8,3 +8,8 @@ chidatoshihiro@techacademy:~/workspace/c2c (master) $ rails generate controller
       invoke    coffee
       invoke    scss
 chidatoshihiro@techacademy:~/workspace/c2c (master) $ 
+chidatoshihiro@techacademy:~/workspace/c2c (master) $ rails generate model User name email password_digest
+      invoke  active_record
+      create    db/migrate/20150907121509_create_users.rb
+      create    app/models/user.rb
+chidatoshihiro@techacademy:~/workspace/c2c (master) $
