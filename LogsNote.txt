@@ -13,3 +13,27 @@ chidatoshihiro@techacademy:~/workspace/c2c (master) $ rails generate model User 
       create    db/migrate/20150907121509_create_users.rb
       create    app/models/user.rb
 chidatoshihiro@techacademy:~/workspace/c2c (master) $
+chidatoshihiro@techacademy:~/workspace/c2c (master) $ rails generate controller users new
+      create  app/controllers/users_controller.rb
+       route  get 'users/new'
+      invoke  erb
+      create    app/views/users
+      create    app/views/users/new.html.erb
+      invoke  assets
+      invoke    coffee
+      invoke    scss
+chidatoshihiro@techacademy:~/workspace/c2c (master) $ 
+chidatoshihiro@techacademy:~/workspace/c2c (master) $ rake routes
+   Prefix Verb   URI Pattern               Controller#Action
+users_new GET    /users/new(.:format)      users#new
+     root GET    /                         static_pages#home
+   signup GET    /signup(.:format)         users#new
+    users GET    /users(.:format)          users#index
+          POST   /users(.:format)          users#create
+ new_user GET    /users/new(.:format)      users#new
+edit_user GET    /users/:id/edit(.:format) users#edit
+     user GET    /users/:id(.:format)      users#show
+          PATCH  /users/:id(.:format)      users#update
+          PUT    /users/:id(.:format)      users#update
+          DELETE /users/:id(.:format)      users#destroy
+chidatoshihiro@techacademy:~/workspace/c2c (master) $ 
