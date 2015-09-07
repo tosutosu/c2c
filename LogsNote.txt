@@ -1,0 +1,10 @@
+chidatoshihiro@techacademy:~/workspace/c2c (master) $ rails generate controller
+ static_pages home                                                                   create  app/controllers/static_pages_controller.rb
+       route  get 'static_pages/home'
+      invoke  erb
+      create    app/views/static_pages
+      create    app/views/static_pages/home.html.erb
+      invoke  assets
+      invoke    coffee
+      invoke    scss
+chidatoshihiro@techacademy:~/workspace/c2c (master) $ 
